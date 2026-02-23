@@ -1,0 +1,401 @@
+export const styles = {
+  app: {
+    display: "flex",
+    flexDirection: "column",
+    height: "100vh",
+    background: "#0a0a0f",
+    color: "#e8e6f0",
+    fontFamily: "'DM Sans', sans-serif",
+  },
+  header: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "space-between",
+    padding: "10px 20px",
+    borderBottom: "1px solid #1e1e2e",
+    background: "#0a0a12",
+    flexShrink: 0,
+    gap: "12px",
+    flexWrap: "wrap",
+  },
+  headerLeft: { display: "flex", alignItems: "center", gap: "12px" },
+  logoMark: {
+    width: "36px",
+    height: "36px",
+    borderRadius: "10px",
+    background: "linear-gradient(135deg, #7c6af7, #3b82f6)",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  logoA: { color: "white", fontFamily: "'Space Mono', monospace", fontWeight: "700", fontSize: "16px" },
+  logoText: { fontFamily: "'Space Mono', monospace", fontSize: "15px", fontWeight: "700", color: "#e0ddf7", letterSpacing: "0.1em" },
+  logoSub: { fontSize: "11px", color: "#4a4a6a", letterSpacing: "0.05em" },
+  headerCenter: { display: "flex", gap: "8px", alignItems: "center", flex: 1, justifyContent: "center", flexWrap: "wrap" },
+  headerRight: { display: "flex", gap: "8px", alignItems: "center", flexWrap: "wrap" },
+  langToggle: {
+    border: "1px solid #2a2a4a",
+    borderRadius: "6px",
+    padding: "5px 12px",
+    fontSize: "12px",
+    cursor: "pointer",
+    color: "#c4b5fd",
+    fontFamily: "'Space Mono', monospace",
+    transition: "all 0.2s",
+  },
+  voiceToggle: {
+    border: "1px solid",
+    borderRadius: "6px",
+    padding: "5px 12px",
+    fontSize: "12px",
+    cursor: "pointer",
+    fontFamily: "'Space Mono', monospace",
+    transition: "all 0.2s",
+  },
+  wbToggle: {
+    border: "1px solid",
+    borderRadius: "6px",
+    padding: "5px 12px",
+    fontSize: "12px",
+    cursor: "pointer",
+    fontFamily: "'Space Mono', monospace",
+    transition: "all 0.2s",
+  },
+  sideToggle: {
+    background: "#111",
+    border: "1px solid #2a2a4a",
+    borderRadius: "6px",
+    padding: "5px 10px",
+    fontSize: "14px",
+    cursor: "pointer",
+    color: "#6b6a8a",
+  },
+  modeToggle: {
+    background: "#7c6af7",
+    border: "none",
+    borderRadius: "6px",
+    padding: "5px 12px",
+    fontSize: "12px",
+    cursor: "pointer",
+    color: "white",
+    fontFamily: "'Space Mono', monospace",
+    transition: "all 0.2s",
+  },
+  main: {
+    display: "flex",
+    flex: 1,
+    overflow: "hidden",
+  },
+  whiteboardPanel: {
+    flex: "0 0 52%",
+    overflow: "hidden",
+    borderRight: "1px solid #1e1e2e",
+  },
+  chatPanel: {
+    display: "flex",
+    flexDirection: "column",
+    overflow: "hidden",
+    minWidth: 0,
+  },
+  messages: {
+    flex: 1,
+    overflowY: "auto",
+    padding: "20px 16px",
+    display: "flex",
+    flexDirection: "column",
+    gap: "14px",
+  },
+  inputArea: {
+    display: "flex",
+    alignItems: "flex-end",
+    gap: "12px",
+    padding: "12px 16px",
+    borderTop: "1px solid #1e1e2e",
+    background: "#0a0a12",
+    flexShrink: 0,
+  },
+  inputWrapper: {
+    flex: 1,
+    display: "flex",
+    alignItems: "flex-end",
+    gap: "8px",
+    background: "#111120",
+    border: "1px solid #2a2a3a",
+    borderRadius: "12px",
+    padding: "8px 12px",
+    transition: "border-color 0.2s",
+  },
+  textarea: {
+    flex: 1,
+    background: "transparent",
+    border: "none",
+    outline: "none",
+    color: "#e0ddf7",
+    fontSize: "14px",
+    fontFamily: "'DM Sans', sans-serif",
+    resize: "none",
+    lineHeight: "1.5",
+    maxHeight: "120px",
+    overflowY: "auto",
+  },
+  sendBtn: {
+    width: "34px",
+    height: "34px",
+    borderRadius: "8px",
+    background: "linear-gradient(135deg, #7c6af7, #3b82f6)",
+    border: "none",
+    color: "white",
+    fontSize: "18px",
+    cursor: "pointer",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    flexShrink: 0,
+    transition: "opacity 0.2s",
+  },
+  sidebar: {
+    width: "220px",
+    flexShrink: 0,
+    borderLeft: "1px solid #1e1e2e",
+    background: "#0a0a12",
+    overflowY: "auto",
+    padding: "16px 12px",
+    display: "flex",
+    flexDirection: "column",
+    gap: "20px",
+  },
+  sideSection: { display: "flex", flexDirection: "column", gap: "8px" },
+  sideTitle: {
+    fontSize: "10px",
+    color: "#4a4a6a",
+    fontFamily: "'Space Mono', monospace",
+    textTransform: "uppercase",
+    letterSpacing: "0.1em",
+    paddingBottom: "4px",
+    borderBottom: "1px solid #1a1a2a",
+  },
+  promptGrid: { display: "flex", flexDirection: "column", gap: "4px" },
+  promptBtn: {
+    display: "flex",
+    alignItems: "center",
+    gap: "8px",
+    background: "#111120",
+    border: "1px solid #1e1e2e",
+    borderRadius: "6px",
+    padding: "7px 10px",
+    cursor: "pointer",
+    textAlign: "left",
+    transition: "border-color 0.2s, background 0.2s",
+    color: "#a8a4c8",
+  },
+  promptIcon: { fontSize: "14px", flexShrink: 0 },
+  promptLabel: { fontSize: "12px" },
+  howList: { display: "flex", flexDirection: "column", gap: "6px" },
+  howItem: { display: "flex", gap: "8px", alignItems: "flex-start" },
+  howIcon: { fontSize: "13px", flexShrink: 0 },
+  howText: { fontSize: "11px", color: "#6b6a8a", lineHeight: "1.4" },
+  voiceGuide: { display: "flex", flexDirection: "column", gap: "4px" },
+  guideText: { fontSize: "11px", color: "#6b6a8a", lineHeight: "1.5" },
+  
+  // Gemini Live Mode Styles
+  mainStage: {
+    flex: 1,
+    position: 'relative',
+    padding: '16px',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    overflow: 'hidden'
+  },
+  whiteboardContainer: {
+    width: '100%',
+    height: '100%',
+    maxWidth: '1536px',
+    maxHeight: '85vh',
+    display: 'flex',
+    flexDirection: 'column',
+    boxShadow: '0 10px 25px rgba(0,0,0,0.3)',
+    borderRadius: '8px',
+    overflow: 'hidden',
+    position: 'relative',
+    border: '1px solid rgba(255,255,255,0.05)'
+  },
+  placeholder: {
+    position: 'absolute',
+    inset: 0,
+    background: '#3c4043',
+    zIndex: 10,
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    textAlign: 'center',
+    padding: '24px'
+  },
+  placeholderIcon: {
+    height: '128px',
+    width: '128px',
+    background: 'rgba(59, 130, 246, 0.1)',
+    borderRadius: '50%',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginBottom: '24px',
+    animation: 'pulse 2s ease-in-out infinite',
+    border: '1px solid rgba(59, 130, 246, 0.2)'
+  },
+  placeholderIconText: {
+    fontSize: '64px',
+    color: '#3b82f6'
+  },
+  placeholderTitle: {
+    fontSize: '36px',
+    fontWeight: 'bold',
+    color: 'white',
+    marginBottom: '12px',
+    letterSpacing: '-0.5px'
+  },
+  placeholderSubtitle: {
+    color: '#9ca3af',
+    maxWidth: '448px',
+    fontSize: '18px',
+    fontWeight: '500'
+  },
+  aiAvatar: {
+    position: 'absolute',
+    bottom: '16px',
+    left: '16px',
+    background: 'rgba(0,0,0,0.7)',
+    backdropFilter: 'blur(12px)',
+    padding: '8px 16px',
+    borderRadius: '12px',
+    display: 'flex',
+    alignItems: 'center',
+    gap: '12px',
+    zIndex: 20,
+    border: '1px solid rgba(255,255,255,0.1)',
+    boxShadow: '0 4px 12px rgba(0,0,0,0.3)'
+  },
+  aiAvatarIndicator: {
+    position: 'relative'
+  },
+  aiAvatarPing: {
+    height: '12px',
+    width: '12px',
+    borderRadius: '50%',
+    background: '#60a5fa',
+    animation: 'ping 1s cubic-bezier(0, 0, 0.2, 1) infinite',
+    position: 'absolute',
+    inset: 0
+  },
+  aiAvatarDot: {
+    height: '12px',
+    width: '12px',
+    borderRadius: '50%',
+    position: 'relative'
+  },
+  aiAvatarText: {
+    fontSize: '14px',
+    fontWeight: 'bold',
+    letterSpacing: '0.5px'
+  },
+  aiAvatarVisualizer: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '2px',
+    height: '16px',
+    marginLeft: '4px'
+  }
+};
+
+export const welcomeStyles = {
+  container: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    height: "100%",
+    padding: "40px 20px",
+    textAlign: "center",
+    position: "relative",
+    gap: "12px",
+  },
+  glow: {
+    position: "absolute",
+    top: "30%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
+    width: "300px",
+    height: "300px",
+    background: "radial-gradient(circle, #7c6af715, transparent 70%)",
+    pointerEvents: "none",
+  },
+  logoLarge: {
+    width: "64px",
+    height: "64px",
+    borderRadius: "18px",
+    background: "linear-gradient(135deg, #7c6af7, #3b82f6)",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    color: "white",
+    fontSize: "28px",
+    fontWeight: "700",
+    fontFamily: "'Space Mono', monospace",
+    boxShadow: "0 0 40px #7c6af730",
+  },
+  title: {
+    fontSize: "24px",
+    color: "#e0ddf7",
+    fontWeight: "700",
+    margin: 0,
+  },
+  subtitle: {
+    fontSize: "13px",
+    color: "#7c6af7",
+    fontFamily: "'Space Mono', monospace",
+    letterSpacing: "0.08em",
+    margin: 0,
+  },
+  desc: {
+    maxWidth: "480px",
+    fontSize: "14px",
+    color: "#6b6a8a",
+    lineHeight: "1.6",
+    margin: "4px 0 8px",
+  },
+  exampleRow: {
+    display: "flex",
+    flexWrap: "wrap",
+    gap: "8px",
+    justifyContent: "center",
+  },
+  exBtn: {
+    background: "#111120",
+    border: "1px solid #2a2a4a",
+    borderRadius: "8px",
+    padding: "8px 14px",
+    fontSize: "13px",
+    color: "#a8a4c8",
+    cursor: "pointer",
+    transition: "border-color 0.2s",
+  },
+};
+
+export const globalStyles = `
+  @keyframes bounce {
+    0%, 60%, 100% { transform: translateY(0); }
+    30% { transform: translateY(-6px); }
+  }
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+  }
+  button:hover:not(:disabled) {
+    filter: brightness(1.15);
+  }
+`;
