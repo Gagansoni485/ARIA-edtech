@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Frontend-React_18-blue?style=for-the-badge" />
+  <img src="https://github.com/Gagansoni485/ARIA-edtech/blob/main/Screenshot%202026-02-27%20115658.png?raw=true" />
   <img src="https://img.shields.io/badge/Backend-Node.js-green?style=for-the-badge" />
 </p>
 
